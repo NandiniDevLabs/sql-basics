@@ -250,3 +250,9 @@ HAVING SUM(amount) > 50
 ORDER BY total_paid DESC
 LIMIT 20;
 
+
+SELECT customer_id, amount, COUNT(*) FROM payment
+GROUP BY customer_id, amount ORDER BY customer_id, amount;
+
+SELECT * FROM payment WHERE customer_id = 1 ORDER BY amount;
+
