@@ -142,7 +142,6 @@ DROP TABLE payment2;
 
 
 
-
 --- Doubts-----
 
 SELECT * FROM payment2 WHERE customer_id IS NULL;
