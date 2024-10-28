@@ -142,3 +142,11 @@ DROP TABLE payment2;
 
 
 
+--- Doubts-----
+
+SELECT * FROM payment2 WHERE customer_id IS NULL;
+UPDATE payment2 SET customer_id = NULL WHERE customer_id = 107;
+
+SELECT COUNT(*),customer_id,staff_id FROM payment2 
+GROUP BY customer_id, staff_id
+ORDER BY customer_id DESC;
